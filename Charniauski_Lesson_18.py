@@ -2,10 +2,10 @@
 # Создайте класс BankAccount, который представляет банковский счет.
 class BankAccount:
 # У класса есть приватные свойства __account_number (номер счета) и __balance (баланс).
-    __account_number = None
-    __balance = 0
+#     __account_number = None
+#     __balance = 0
 # Инициализатор __init__ используется для инициализации номера счета и начального баланса.
-    def __init__(self,__account_number, __balance):
+    def __init__(self,__account_number = None, __balance = 0):
         self.__account_number = __account_number
         self.__balance = __balance
 
@@ -30,7 +30,7 @@ class BankAccount:
 #В основной части кода мы создаем экземпляр класса BankAccount
 # с номером счета "123456789" и начальным балансом 1000.
 
-my_BankAccount = BankAccount("123456789",1000)
+my_BankAccount = BankAccount("123456789", 1000)
 my_BankAccount.get_account_number()
 my_BankAccount.get_balance()
 my_BankAccount.deposit(10000)
